@@ -1,0 +1,160 @@
+body {
+  font-family: helvetica;
+}
+
+h1 {
+  background-color: #000;
+  color: red;
+}
+h2 {
+  background-color: #900c3f;
+  color: green;
+}
+p {
+  color: blue;
+}
+a {
+  color: pink;
+  background-color: yellowgreen;
+
+  /* la forma correcta en la cual enlazamos un id es css
+     es usando el # contenedor-uno*/
+
+  /* un id se usa cuando se iene un estilo especifico para
+     un solo elemento */
+}
+#contenedor-uno {
+  background-color: #f01;
+}
+#contenedor-dos {
+  background-color: brown;
+}
+/* para poder compartir estilos debemos usar clases ¨class" */
+.contenedor-principal {
+  padding: 30px;
+}
+
+.btn-ingresar {
+  background-color: blue;
+  color: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+/* cuando se usan clases se pueden compartir estilos*/
+.btn-registro {
+  font-size: 25px;
+  background-color: red;
+}
+.contenedor-form {
+  /* border que cubra */
+  border: 3px solid rgb(255, 136, 0);
+  border-radius: 8px;
+}
+
+.contenedor-interno-form {
+  padding: 20px;
+  /* left: izquierda */
+  /* center: centro */
+  /* right: derecha */
+  /* esto lo de hace de forma horizontal */
+  text-align: center;
+}
+
+.titulo-form {
+  color: rgb(14, 139, 255);
+  background-color: #fff;
+}
+
+.input-form {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px #000 solid;
+  width: 400px;
+}
+
+/* retos para el profe 
+  quiero que el iput del codigo 
+  mida 100px */
+
+.input-codigo {
+  width: 100px;
+}
+
+.input-numero {
+  width: 275px;
+}
+
+/* reto para ustedes denle estilos
+  al boton */
+
+.btn-crear-usuario {
+  background-color: rgb(248, 156, 35);
+  color: #000;
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+}
+
+/* PSEUDOCLASES*/
+/* Los elementos tienen propiedades internas
+  por el ejemplo el hover
+  
+  hover: es la propiedad que detecta cuando el mouse pasa
+  el elemento es decir estos estilos se aplicaran solo si el 
+  mouse esta sobr dicho elemento */
+.btn-crear-usuario:hover {
+  background-color: green;
+}
+
+.btn-ingresar:hover {
+  background-color: red;
+  color: #000;
+  /* text decoration none quita el subrayado*/
+  text-decoration: none;
+  padding: 50px;
+}
+
+/* Los elementos como el tienen pseudoclases como
+    link cuando el link no lo has visitado
+    visited
+    hover
+    active
+    Estas pseudoclases aplican para todos los elementos
+    html
+
+    */
+div:hover {
+  background-color: #f01;
+}
+
+.contenedor-interno-form h1 {
+  border: 2px solid #000;
+}
+
+.contenedor-interno-form p {
+    border: 2px solid #f01;
+}
+/*  FIRST-CHILD
+busca el primer elemento
+<h1> </h1>
+<h1> </h1>
+<h1> </h1>
+<h1> </h1>
+<h1> </h1>
+
+*/
+h1:first-child {
+    color:rgb(168, 14, 168);
+}
+
+input:first-of-type {
+    color: red
+}
+
+/* h2:nth-child(0) {
+color: #000;} */
+
+
+
+

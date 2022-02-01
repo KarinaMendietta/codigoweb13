@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de personas</title>
+</head>
+<body>
+    <h1>Formulario de registro </h1>
+        <h2> A) Ingrese sus datos personales</h2>
+        <form action="" method="">
+
+            <p>
+                <input type="text" placeholder="Ingresa tu nombre" 
+                value="" name="nombre" id="mi_nombre" required />
+            </p>
+
+            <p>
+                <input type="text" placeholder="Apellido paterno"
+                value="" name="apellido_paterno" id="mi_apellido_paterno" required />
+            </p>
+
+            <p>
+                <input type="text" placeholder="Apellido materno"
+                value="" name="apellido_materno" id="mi_apellido_materno" required />
+            </p>
+
+            <p> 
+                <input type="text" placeholder="Ingrese su DNI"
+                name="DNI" minlength="8" maxlength="8" />
+            </p>    
+
+            <p>Fecha de nacimiento: 
+                <input type="date" /> 
+            </p>
+
+            <p>Estado civil:</p>
+
+            <p>
+            <input type="radio" name="opcion_estado_civil" checked /> Soltero
+            <br />
+            <input type="radio" name="opcion_estado_civil"/> Casado
+            <br />
+            <input type="radio" name="opcion_estado_civil"/> Viudo
+            <br />
+            <input type="radio" name="opcion_estado_civil"/> Divorciado
+            <br />
+            </p>
+            
+        
+        <h2> B) Ingrese su información de contacto</h2>  
+
+            <p>
+                <input type="email" placeholder="Ingrese su correo"
+                value="" name="correo" id="mi_correo" />
+            </p>
+        
+            <p>
+                <input type="tel" placeholder="Ingrese su teléfono"
+                value="" name="telefono" id="mi_telefono" />
+            </p>
+
+            <p>
+                <input type="tel" placeholder="Contacto de emergencia" 
+                value="" name="telefono_emergencia" id="telefono_emergencia"/>
+            </p>
+
+            <p>
+                <input type="text" placeholder="Direccion actual"
+                value="" name="direccion" id="mi_direccion" />
+            </p>
+
+            <p>
+                <input type="text" placeholder="Distrito"
+                value="" name="distrito" id="distrito" />
+            </p>
+
+        <h2>¿Cómo se entero de nosotros?</h2>   
+            <p>
+                <input type="checkbox" name="opcion_se_entero_de_nosotros[]" 
+                /> Television y/o radio
+
+                <input type="checkbox" name="opcion_se_entero_de_nosotros[]" 
+                /> Redes sociales
+
+                <input type="checkbox" name="opcion_se_entero_de_nosotros[]" 
+                /> Página web
+
+                <input type="checkbox" name="opcion_se_entero_de_nosotros[]" 
+                /> Familiares y/o amigos          
+            </p>
+                <br />
+                <input type="submit"  />
+        <h3> 
+            <p>
+                <i>¡Muchas gracias por participar! </i>
+            </p>
+
+            <p>
+                <img src="https://t4.ftcdn.net/jpg/03/78/71/03/360_F_378710388_1p38l2jfzEMqQ2pJbxBCnfxwP94HYGfQ.jpg"
+                alt="Tu opinion importa" 
+                width="200" height="100" />
+            </p>
+            
+        </h3>
+        </form>
+</body>
+</html>
