@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Rubik", sans-serif;
+    background-color: hsl(223, 19%, 93%);
+  }
+  
+  .container {
+    display: flex;
+    justify-items: center;
+  }
+  
+  .row {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 50px;
+  }
+  
+  .card {
+    border-radius: 8px;
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .card-profile {
+    display: flex;
+    align-items: center;
+  }
+  
+  .card-profile img {
+    width: 35px;
+  }
+  
+  .card-profile span {
+    padding-left: 10px;
+  }
+  
+  .card-button-plus-minus {
+    color: hsl(238, 40%, 52%);
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: hsl(223, 19%, 93%);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .card-button-plus-minus button {
+    background-color: transparent;
+    border: none;
+  }
+  
+  .card-header-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .card-header div {
+    margin-bottom: 10px;
+  }
+  
+  .text-primary {
+    color: hsl(238, 40%, 52%);
+  }
+  
+  .text-dark {
+    color: hsl(211, 10%, 45%);
+  }
+  
+  .comment-container {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100%;
+  }
+  
+  .flex-grow {
+    flex-grow: 2;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .flex-grow textarea {
+    width: 100%;
+    border-radius: 12px;
+    border: 2px solid #ccc;
+    font-family: "Rubik", sans-serif;
+    resize: none;
+    padding: 20px;
+    font-size: 16px;
+  }
+  
+  .commment-profile {
+    width: 50px;
+  }
+  
+  .btn-primary {
+    background-color: hsl(238, 40%, 52%);
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+    /* top - right - bottom - left */
+    padding: 15px 30px;
+  }
+  
+  /* es para indicar que estoy esta carpeta */
+  /* ./ */
+  
+  /* retroceder una carpeta */
+  /* cada 2 puntos + / es una caprpeta atras */
+  /* ../../../ */
+  .line-with-card {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .hr {
+    height: 94%;
+    margin-left: 50px;
+    margin-right: 50px;
+    background-color: #ccc;
+    width: 2px;
+    border: 2px;
+  }
+  
+  .pointer {
+    cursor: pointer;
+  }
+  
+  .btn-primary:hover {
+    opacity: 0.5;
+  }
