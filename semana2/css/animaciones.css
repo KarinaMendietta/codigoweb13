@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  /* si usamos tablas esto no es lo idea */
+  overflow-x: hidden;
+}
+
+.texto-animado {
+  /* una animacion esta compuesta por un nombre y un tiempo */
+  animation-name: texto-volador;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  border: solid;
+}
+
+/* @keyframes texto-volador {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background-color: aqua;
+    border: none;
+  }
+  to {
+    margin-left: -100%;
+    background-color: brown;
+    color: white;
+    border: none;
+  }
+}
+.image-animada {
+  animation-name: image-resize;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+  width: 400px;
+  height: 400px;
+}
+@keyframes image-resize {
+  from {
+    width: 20px;
+    height: 20px;
+  }
+  to {
+    width: 400px;
+    height: 400px;
+  }
+}
+.box-uno {
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  animation-name: box-animation;
+  animation-duration: 10s;
+}
+@keyframes box-animation {
+  0% {
+    background-color: black;
+  }
+  25% {
+    background-color: sandybrown;
+  }
+  50% {
+    background-color: rgb(34, 0, 128);
+  }
+  75% {
+    background-color: blue;
+  }
+  100% {
+    background-color: green;
+  }
+}
+.ball-uno {
+  height: 200px;
+  width: 200px;
+  background-color: rgb(255, 0, 255);
+  border-radius: 50%;
+  animation-name: ball-animation;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+@keyframes ball-animation {
+  from {
+    transform: translateY(0xp);
+  }
+  to {
+    transform: translateY(-135px);
+  }
+} */
+
+/* animation-name: texto-animado-dos;
+  animation-duration: 2s;
+  animation-timing-function: steps(144);
+  animation-fill-mode: both;
+  animation-direction: normal;
+  animation-delay: 1s; */
+
+.lineas {
+  position: relative;
+  text-align: center;
+  width: 600px;
+  margin: auto;
+  font-size: 24px;
+  white-space: nowrap;
+  border-right: 10px solid rgb(177, 59, 255);
+  transform: translateY(-50%);
+  overflow: hidden;
+}
+
+.texto-animado-dos {
+  animation: texto-animado-dos 5s steps(144) 1s normal both,
+    cursor 0.5s steps(50) infinite normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes texto-animado-dos {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 600px;
+  }
+}
+
+@keyframes cursor {
+  from {
+    border-right-color: rgb(255, 77, 196);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
