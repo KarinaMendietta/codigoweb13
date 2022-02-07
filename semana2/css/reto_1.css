@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Outfit", sans-serif;
+}
+section {
+  background-color: hsl(217, 54%, 11%);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  background-color: hsl(215, 32%, 27%);
+  height: 77vh;
+  width: 47vh;
+  border-radius: 14px;
+}
+
+.card-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 41vh;
+}
+
+.contenedor-uno {
+  height: 14vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.titulo {
+    margin-bottom: 12px;
+}
+.text-white {
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  font-style: normal;
+}
+
+.text-gray {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.contenedor-dos {
+  height: 9vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contenedor-dos-turquesa {
+  margin-left: 20px;
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.contenedor-dos-gris {
+  margin-right: 20px;
+}
+
+.linea-divisoria {
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.5;
+  margin-left:20px ;
+  margin-right:20px ;
+}
+
+.contenedor-tres {
+  display: flex;
+  align-items: center;
+  margin-left: 18px;
+  margin-top: 25px;
+  }
+
+.card-image-photo {
+  border-radius: 5%;
+  width: 35vh;
+}
+.profile-image {
+  height: 4vh;
+  width: 4vh;
+  border: solid white;
+  border-radius: 50%;
+}
