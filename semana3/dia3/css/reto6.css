@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Barlow", sans-serif;
+  }
+  
+  .header {
+    background-color: #40bfff !important;
+    background: url("../images/desktop/image-header.jpg");
+    height: 55vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+  }
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav div {
+    padding: 20px;
+  }
+  
+  .menu-nav {
+    display: flex;
+    list-style: none;
+  }
+  
+  .menu-nav li {
+    padding-right: 30px;
+  }
+  
+  .menu-nav li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .btn-contact {
+    font-family: "Fraunces", serif;
+    background-color: hsl(0, 0%, 100%);
+    color: #000 !important;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+  }
+  
+  .content-title {
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+  }
+  
+  .content-title h1 {
+    font-family: "Fraunces", serif;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    letter-spacing: 10px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 50vh 50vh 50vh 70vh 30vh;
+    grid-template-areas:
+      "transform      transform      transform-image transform-image"
+      "standout-image standout-image standout        standout"
+      "cherry         cherry         orange          orange"
+      "testimonial    testimonial    testimonial     testimonial"
+      "milk           orange-plate   ice             build";
+  }
+  
+  .grid-container div {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .item1 {
+    grid-area: transform;
+  }
+  
+  .item2 {
+    background-color: hsl(51, 100%, 49%) !important;
+    background: url("../images/desktop/image-transform.jpg");
+    grid-area: transform-image;
+  }
+  
+  .item3 {
+    background-color: hsl(7, 99%, 70%) !important;
+    background: url("../images/desktop/image-stand-out.jpg");
+    grid-area: standout-image;
+  }
+  
+  .item4 {
+    grid-area: standout;
+  }
+  
+  .container-text {
+    width: 40%;
+    margin: auto;
+  }
+  
+  .container-text * {
+    margin-bottom: 20px;
+  }
+  
+  .container-text h2 {
+    font-family: "Fraunces", serif;
+    font-size: 2.2em;
+  }
+  
+  .container-text p {
+    color: hsl(213, 9%, 39%);
+  }
+  
+  .container-text a {
+    font-family: "Fraunces", serif;
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .border {
+    background-position: bottom;
+    border-radius: 5px;
+    width: 120px;
+    height: 8px;
+    position: relative;
+    margin-bottom: 0 !important;
+  }
+  .border a {
+    text-decoration: none;
+    margin-bottom: 0 !important;
+    position: absolute;
+    bottom: 1px;
+    left: 4px;
+  }
+  .learn-yellow {
+    background-color: hsl(51, 100%, 49%);
+    opacity: 0.8;
+  }
+  
+  .learn-red {
+    background-color: hsl(7, 99%, 70%);
+    opacity: 0.8;
+  }
+  
+  .container-text-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
+  }
+  
+  .container-text-bottom * {
+    margin-bottom: 30px;
+  }
+  
+  .container-text-bottom h3 {
+    font-family: "Fraunces", serif;
+    font-weight: 900;
+  }
+  
+  .letter-green {
+    color: #24544c;
+  }
+  
+  .letter-blue {
+    color: #19566d;
+  }
+  
+  .container-text-bottom p {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item5 {
+    background-color: rgb(151, 214, 199) !important;
+    background: url("../images/desktop/image-graphic-design.jpg");
+    grid-area: cherry;
+  }
+  
+  .item6 {
+    background-color: rgb(78, 191, 255) !important;
+    background: url("../images/desktop/image-photography.jpg");
+    grid-area: orange;
+  }
+  
+  .item8 {
+    grid-area: milk;
+    background: url("../images/desktop/image-gallery-milkbottles.jpg");
+  }
+  
+  .item9 {
+    grid-area: orange-plate;
+    background: url("../images/desktop/image-gallery-orange.jpg");
+  }
+  
+  .item10 {
+    grid-area: ice;
+    background: url("../images/desktop/image-gallery-cone.jpg");
+  }
+  
+  .item11 {
+    grid-area: build;
+    background: url("../images/desktop/image-gallery-sugarcubes.jpg");
+  }
+  
+  .item7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: testimonial;
+    align-items: center;
+  }
+  
+  .item7 * {
+    margin-bottom: 30px;
+  }
+  
+  .container-testimonial {
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .title-testimonial {
+    font-family: "Fraunces", serif;
+    font-size: 1.3em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: hsl(210, 4%, 67%);
+    margin-bottom: 50px;
+  }
+  
+  .img-round {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .text-testimonial {
+    width: 70%;
+    margin: auto;
+    color: hsl(212, 27%, 19%);
+    font-size: 14px;
+  }
+  
+  .name-testimonial {
+    font-family: "Fraunces", serif;
+    margin-top: 40px;
+    font-size: 0.8em;
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 375px) {
+    .nav {
+      display: none;
+    }
+  
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-rows: 50vh 50vh 50vh 50vh 100vh 100vh 135vh 25vh 25vh;
+      grid-template-areas:
+        "transform-image   transform-image"
+        "transform         transform"
+        "standout-image    standout-image"
+        "standout          standout"
+        "cherry            cherry "
+        "orange            orange"
+        "testimonial       testimonial "
+        "milk              orange-plate   "
+        "ice               build";
+    }
+  
+    .container-text {
+      width: 80%;
+      text-align: center;
+    }
+  
+    .border {
+      margin: auto;
+    }
+  
+    .container-text-bottom p {
+      width: 80%;
+    }
+  
+    .container-testimonial {
+      flex-direction: column;
+    }
+  
+    .header {
+      height: 79vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-mobile {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+      width: 100%;
+    }
+  
+    .menu-mobile div {
+      padding: 20px;
+    }
+  
+    .content-title h1 {
+      margin-top: 38%;
+    }
+  }
