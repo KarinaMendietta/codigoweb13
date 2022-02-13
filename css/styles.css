@@ -5,21 +5,21 @@
 
 body {
   font-family: "Heebo", sans-serif;
+  
 }
 
 .header {
   display: flex;
-  /* flex-start
-    center
-    flex-end */
   justify-content: flex-end;
-}
+  position:fixed;
+  z-index: 5;
+  width: 100%;
+ }
 
 .background-header {
-  background: url(../imagenes/index/banner-div.jpg);
-  background-size: cover;
-  height: 25vh;
-  background-repeat: no-repeat;
+  background:linear-gradient(to right,#fc94a3  ,#b474a4,#6c5cac,#0c3497  );
+  height: 8vh;
+  
 }
 
 .nav ul {
@@ -34,23 +34,29 @@ body {
 .nav ul li a {
   text-decoration: none;
   color: white;
-  font-weight: 600;
+  font-weight: 700;
 }
-.nav ul > li:hover {
-  opacity: 0.5;
+.nav ul > li a:hover {
+  color:#fc94a3  ;
+  transition: 0.7s;
 }
 
 .banner {
   height: 80vh;
+  margin-bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url(../imagenes/index/banner-div.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
 }
 
 .title {
   font-size: 3em;
   font-weight: 500;
-}
+  }
 
 .resume {
   width: 45%;
@@ -60,11 +66,11 @@ body {
 }
 
 .btn-primary {
-  background-image: linear-gradient(
-    to right,
-    #2b5876 0%,
-    #4e4376 51%,
-    #2b5876 100%
+  background-image: linear-gradient(to right,
+    #fc94a3  ,
+    #b474a4,
+    #6c5cac,
+    #0c3497    
   );
 }
 
@@ -76,9 +82,11 @@ body {
   transition: 0.5s;
   background-size: 200% auto;
   color: white;
-  box-shadow: 0 0 20px #eee;
-  border-radius: 10px;
-  display: block;
+  font-weight: bold;
+  letter-spacing: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;  cursor:pointer;
+  border: none;
+  border-radius:30px;
   
 }
 
@@ -94,6 +102,13 @@ body {
   border-radius: 50%;
 }
 
+.style-hr{
+  margin-top: 0;
+  height: 5px;
+  background:linear-gradient(to right,#fc94a3  ,#b474a4,#6c5cac,#0c3497  );
+}
+
+
 .section-works {
   max-width: 800px;
   margin: auto;
@@ -101,6 +116,10 @@ body {
 
 .card {
   display: flex;
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 91%, rgba(240,196,199,0.44611347957151615) 100%);
+
+
 }
 
 .card div img {
@@ -152,6 +171,45 @@ hr {
 }
 
 .link-portafolio:hover {
-  color: #ff6464;
+  color: #ff6464  ;
   text-decoration: underline;
 }
+
+.background-footer {
+  height: 15vh;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background: url("../imagenes/index/fondo-footer3.jpg");
+}
+
+.footer {
+  height: 30vh;
+  background-color: #544ca4 ;
+  color: white;
+ 
+   
+}
+
+.contacto-footer {
+  display: flex;
+  height: 30vh;
+  margin: 0,0,0,0;
+align-items: center ;
+justify-content: space-evenly;
+
+}
+
+.contacto-footer div{
+  display: flex;
+  
+  
+}
+
+.menu-social {
+  display: flex;
+  align-items: center;
+  list-style: none;
+
+}
+
+
