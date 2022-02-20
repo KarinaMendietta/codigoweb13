@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 300px auto;
+  grid-template-rows: 100px auto;
+  height: 100vh;
+  grid-template-areas:
+    "menu   navbar"
+    "menu   content";
+}
+
+.container-tema {
+  margin: 30px;
+  margin-bottom: 30px;
+}
+
+.container-tema ul {
+  list-style: none;
+}
+
+.container-tema ul > li a {
+  color: rgb(161, 161, 161);
+  text-decoration: none;
+}
+
+.grid-container > div {
+  border: solid 1px #ccc;
+}
+
+.item1 {
+  grid-area: menu;
+  background-color: #0a192a;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  /* esto es para activar el scroll */
+  overflow: auto;
+}
+.item2 {
+  grid-area: navbar;
+  background-color: #0a192a;
+  position: fixed;
+  width: calc(99% - 300px);
+  right: 16px;
+}
+
+.item3 {
+  scroll-behavior: smooth;
+  grid-area: content;
+  background-color: #0a192a;
+  overflow: auto;
+}
+
+.document-container {
+  margin: 30px;
+  margin-bottom: 30px;
+}
+
+.document-container * {
+  padding: 12px;
+}
+
+.code-container {
+  background-color: rgb(0, 30, 60);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 70%;
+  margin-left: 12px;
+  font-family: "Inconsolata", monospace;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100px;
+  margin-right: 30px;
+}
+
+.logo-container img {
+  filter: brightness(0) invert(1);
+}
+
+.btn-github {
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 6px;
+}
+
+.variable {
+  color: rgb(190, 0, 207);
+  font-weight: 600;
+  padding: 0;
+}
+
+.llave {
+  color: rgb(151, 161, 0);
+  font-weight: 600;
+  padding: 0;
+}
+
+.console {
+  color: rgb(52, 163, 0);
+  font-weight: 600;
+  padding: 0;
+}
+
+.equal {
+  color: aquamarine;
+  font-weight: 600;
+  padding: 0;
+}
+
+.btn-flotante {
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 25px;
+  border-radius: 50%;
+  color: #0a192a;
+  text-decoration: none;
+  position: fixed;
+  bottom: 30px;
+  right: 50px;
+  font-weight: bold;
+}
+
+@media only screen and  (max-width:375px) {
+  .nav {
+    display: none;
+  }
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto !important;
+
+  height: 100vh;
+  grid-template-areas:
+    "navbar"
+    "content";
+}
+.item1 {
+display:none;
+}
+.item2 {
+  grid-area: navbar;
+  background-color: #0a192a;
+  position: fixed;
+  width: 100%;
+  right: -1px;
+  top: -1px;
+  
+}
