@@ -53,8 +53,8 @@ body {
   grid-area: navbar;
   background-color: #0a192a;
   position: fixed;
-  width: calc(99% - 300px);
-  right: 16px;
+  width: calc(99.6% - 300px);
+  right: 1px;
 }
 
 .item3 {
@@ -139,22 +139,27 @@ body {
   font-weight: bold;
 }
 
-@media only screen and  (max-width:375px) {
+@media only screen and  (max-width:600px)  {
   .nav {
     display: none;
   }
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto !important;
-
-  height: 100vh;
-  grid-template-areas:
-    "navbar"
-    "content";
-}
+  .grid-container {
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 100px auto;
+    height: 100vh;
+    grid-template-areas:
+      "menu   navbar"
+      "menu   content";
+  }
 .item1 {
-display:none;
+  grid-area: menu;
+  background-color: #0a192a;
+  position: fixed ;
+  width: 125px;
+  height: 100%;
+  margin-top: 100px;
+  
 }
 .item2 {
   grid-area: navbar;
@@ -163,5 +168,14 @@ display:none;
   width: 100%;
   right: -1px;
   top: -1px;
-  
+  }
+  .item3 {
+    
+    grid-area: content;
+    background-color: #0a192a;
+    
+  }
+  .container-tema {
+    margin-left: 5px;
+  }
 }
