@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <!-- <h1>Eventos de inputs</h1>
+    <!-- 
+      onkeyup: cuando se suelta una tecla
+      onkeypress: cuando se presiona una tecla
+      onkeydown: cuando se pulsa una tecla y no se suelta
+     -->
+    <!-- <input
+      type="text"
+      placeholder="onkeyup"
+      onkeyup="console.log(this.value)"
+    /> -->
+
+    <!-- <input
+      type="text"
+      placeholder="onkeypress"
+      onkeypress="console.log(this.value)"
+    />
+    <input
+      type="text"
+      placeholder="onkeydown"
+      onkeydown="console.log(this.value)"
+    />
+    <!-- Estamos event como parametro para poder -->
+    <!-- enviar los valore del teclado a function de JS -->
+    <!-- Recuerden que event es solo el nombre del
+    parametro, pueden color otro nombre -->
+    <!-- <input
+      type="text"
+      placeholder="Name"
+      id="input_name"
+      name="nombre"
+      onkeyup="obtenerValoresDelInput(event)"
+    /> -->
+    <section>
+      <h1>Registro de usuarios</h1>
+      <form action="">
+        <input
+          type="text"
+          name="nombre"
+          onkeyup="validarInputNoVacios()"
+          placeholder="Ingrese su nombre"
+        />
+        <input
+          type="text"
+          name="apellido"
+          onkeyup="validarInputNoVacios()"
+          placeholder="Ingrese su apellido"
+        />
+        <input
+          type="text"
+          name="email"
+          placeholder="Ingrese su email"
+          class="input-email"
+          onkeyup="validarCorreo(event)"
+          autocomplete="off"
+        />
+        <span id="email-error" class="text-error">Email incorrect</span>
+        <input
+          type="password"
+          name="password"
+          placeholder="Ingrese su password"
+          onkeyup="validarPassword(event)"
+        />
+        <span id="password-error" class="text-error">
+          El password debe tener al menos 8 digitos
+        </span>
+        <input
+          type="text"
+          name="telefono"
+          onkeyup="validarInputNoVacios()"
+          placeholder="Ingrese su telefono"
+        />
+        <!--* Cuando un boton es de tipo submit, este boton por default va a regargar la pagina -->
+        <button type="submit" id="btn-crear-usuario" disabled>
+          Crear Usuario
+        </button>
+      </form>
+    </section>
+    <section>
+      <table border>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Email</th>
+            <th>Password</th>
+            <th>Celular</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <!-- aca vamos a agregar la filas y columnas desde js -->
+        </tbody>
+      </table>
+    </section>
+    <script src="./form.js"></script>
+  </body>
+</html>
