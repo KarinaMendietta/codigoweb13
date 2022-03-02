@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <!-- Bootstrap se maneja por clases, es decir la forma en la que vamos a invocas a
+    sus estilos es usando sus clases -->
+    <h1>Hello, world!</h1>
+    <!-- Bootstrap tiene los siguientes colores
+      primary : azul
+      danger: rojo
+      warning: amarrillo
+      success: verde
+      info: celeste
+      secondary: Gris
+      dark: negro
+      light: blanco
+      -->
+
+    <!-- Vamos a aprender como funcionan las columnas en bootstrap -->
+    <!-- La estructura basica para activar el uso de columns es la siguiente -->
+    <div class="container">
+      <div class="row">
+        <!-- Una vez creada esta estructura vamos a poder crear nuetro manejo de columnas dentro row -->
+        <!-- la clase inicial la cual se encagarga de las columns es col -->
+        <!-- Los max es 12 -->
+        <!-- Recurden que va del 1 -- 12  -->
+        <div class="col-md-6 col-sm-6 col-6 bg-primary">
+          <button class="btn btn-primary">Mi primer boton</button>
+        </div>
+        <div class="col-md-6 col-sm-6 col-6 bg-primary">
+          <button class="btn btn-danger">Boton rojo</button>
+        </div>
+        <div class="col-md-4 col-sm-8 bg-success">
+          <button class="btn btn-success">Boton verde</button>
+        </div>
+        <div class="col-md-4 col-sm-4 bg-warning">
+          <button class="btn btn-warning">Boton amarillo</button>
+        </div>
+        <div class="col-md-4 col-sm-4 bg-danger">
+          <button class="btn btn-info">Boton celeste</button>
+        </div>
+        <div class="col-md-12 col-sm-8 bg-dark">
+          <button class="btn btn-secondary">Boton gris</button>
+        </div>
+        <div class="col-md-4 col-sm-4 bg-danger">
+          <button class="btn btn-dark">Boton oscuro</button>
+        </div>
+        <div class="col-md-8 col-sm-8 bg-danger">
+          <button class="btn btn-light">Boton claro</button>
+        </div>
+      </div>
+    </div>
+
+    <button class="btn btn-light">Boton claro</button>
+
+    <section class="m-5">
+      <h1>Reviendo al formulario</h1>
+
+      <form action="" method="" class="row">
+        <div class="mb-3 col-md-6">
+          <input
+            type="text"
+            placeholder="Ingrese se nombre"
+            name="nombre"
+            class="form-control form-control-lg"
+            id="mi_nombre"
+          />
+        </div>
+        <div class="mb-3 col-md-2">
+          <input
+            type="text"
+            class="form-control form-control-sm"
+            name="ip"
+            value="127.0.0.1"
+            readonly
+          />
+        </div>
+        <div class="mb-3 col-md-4">
+          <input
+            type="text"
+            class="form-control"
+            name="numero_hijos"
+            value="5"
+            disabled
+          />
+        </div>
+        <div class="mb-3 col-md-4">
+          <input
+            type="text"
+            placeholder="Ingrese su DNI"
+            class="form-control"
+            name="dni"
+            minlength="8"
+          />
+        </div>
+        <div class="mb-3 col-md-4">
+          <input
+            type="number"
+            class="form-control"
+            minlength="8"
+            name="DNI"
+            placeholder="DNI"
+          />
+        </div>
+        <div class="mb-3 col-md-4">
+          <input
+            type="number"
+            class="form-control"
+            min="0"
+            max="7500"
+            step="15"
+            placeholder="Pasos"
+          />
+        </div>
+        <div class="mb-3 col-md-6">
+          <input
+            type="email"
+            placeholder="Ingrese su email"
+            name="email"
+            class="form-control"
+            id="mi_email"
+          />
+        </div>
+        <div class="mb-3 col-md-6">
+          <input
+            type="password"
+            placeholder="Ingrese su password"
+            name="password"
+            class="form-control"
+            id="mi_password"
+          />
+        </div>
+        <div class="mb-3 col-md-3">
+          <select class="form-select" name="" id="">
+            <option value="">Paises</option>
+            <option value="">Peru</option>
+            <option value="">Argentina</option>
+            <option value="">Ecuador</option>
+            <option value="">Chile</option>
+            <option value="">Uruguay</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-4">
+          <select class="form-select form-select-lg" name="" id="">
+            <option value="" disabled>Peliculas</option>
+            <option value="">Avengers</option>
+            <option value="">Iron Man</option>
+            <option value="">The Captian america</option>
+            <option value="">Black Panter</option>
+          </select>
+        </div>
+        <div class="mb-3 col-md-5">
+          <select class="form-select form-select-sm" name="" id="">
+            <option value="">Carros</option>
+            <option value="">BMW m4</option>
+            <option value="">Mercedez GLA 250</option>
+            <option value="">Audio R8</option>
+          </select>
+        </div>
+        <div>
+          <input class="btn btn-primary" type="submit" value="Ingresar" />
+        </div>
+      </form>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
