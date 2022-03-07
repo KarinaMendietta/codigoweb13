@@ -1,220 +1,253 @@
 <!-- ESTRUCTURA DE HTML -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Va a contener la etiquetas pero el SEO -->
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS"
-    />
-    <meta name="robots" content="" />
-    <meta name="googlebot" content="" />
-    <meta name="keywords" content="LINDER HASSINGER, HTML, CSS, JS, CODIGO" />
-    <title>Mi portafolio</title>
 
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:site" content="@linder3hs" />
-    <meta name="twitter:title" content="Mi pagina web" />
-    <meta
-      name="twitter:description"
-      content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS"
-    />
-    <meta
-      name="twitter:image"
-      content="meta-portafolio.jpg"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <!-- esta etiqueta nos permite escribir css dentro de un html -->
-  <body>
-    <header class="header background-header">
-      
-      <nav class="nav">
-        <ul>
+<head>
+  <!-- Va a contener la etiquetas pero el SEO -->
+  <meta charset="utf-8" />
+  <meta name="description" content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS" />
+  <meta name="robots" content="" />
+  <meta name="googlebot" content="" />
+  <meta name="keywords" content="LINDER HASSINGER, HTML, CSS, JS, CODIGO" />
+  <title>Mi portafolio</title>
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@linder3hs" />
+  <meta name="twitter:title" content="Mi pagina web" />
+  <meta name="twitter:description" content="Esta pagina es donde estoy aprendiendo HTML, CSS y JS" />
+  <meta name="twitter:image" content="meta-portafolio.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<!-- esta etiqueta nos permite escribir css dentro de un html -->
+
+<body>
+  <header class="header background-header">
+
+    <nav class="nav">
+      <ul>
+        <li>
+          <a href="">Works</a>
+        </li>
+        <li>
+          <a href="">Blog</a>
+        </li>
+        <li>
+          <a href="">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+  <section class="banner">
+    <div>
+      <h1 class="title">Hi, I'm Karina Mendietta,</h1>
+      <h1 class="title">Full Stack Web Developer</h1>
+      <p class="resume">
+        Interested in assuming new technologies challenges
+      </p>
+      <button class="btn-primary">Download Resume</button>
+    </div>
+    <div>
+      <img class="img-profile" src="./imagenes/fotoperfil.jpeg" alt="" />
+    </div>
+  </section>
+  <hr class="style-hr" />
+  <section>
+    <div class="section-works">
+      <h4 class="text-works">Features works</h4>
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto_1.html" target="_blank">
+            <img src="./imagenes/index/img1.jpeg" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto_1.html" target="_blank">
+            <h2>Reto 1 - NFT Design</h2>
+          </a>
+
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto2.html" target="_blank">
+            <img src="./imagenes/index/img2.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto2.html" target="_blank">
+            <h2>Reto 2 - Build The Cominuty</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana2/reto_3.html" target="_blank">
+            <img src="./imagenes/index/img3.jpeg" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana2/reto_3.html" target="_blank">
+            <h2>Reto 3 - Comments</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana3/dia1/reto4.html" target="_blank">
+            <img src="./imagenes/index/reto4-imagen.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana3/dia1/reto4.html" target="_blank">
+            <h2>Reto 4 - Using Grid </h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana3/dia1/reto5.html" target="_blank">
+            <img src="./imagenes/index/reto5-imagen.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana3/dia1/reto5.html" target="_blank">
+            <h2>Reto 5 - Calculator </h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana3/dia3/reto_6.html" target="_blank">
+            <img src="./imagenes/index/reto6-imagen.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana3/dia3/reto_6.html" target="_blank">
+            <h2>Reto 6 - We are creatives</h2>
+          </a>
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML y CSS
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./semana6/dia3/pokedex.html" target="_blank">
+            <img src="./imagenes/imagenesIndex/reto-8.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./semana6/dia3/pokedex.html" target="_blank">
+            <h2>Reto 7 - Pokedex</h2>
+          </a>
+
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML, CSS y JS
+          </p>
+        </div>
+      </div>
+      <hr / >
+      <div class="card">
+        <div>
+          <a class="link-portafolio" href="./retos/reto10Starwars/reto10.html" target="_blank">
+            <img src="./imagenes/imagenesIndex/starWars.JPG" alt="" />
+          </a>
+        </div>
+        <div class="container-detail">
+          <a class="link-portafolio" href="./retos/reto10Starwars/reto10.html" target="_blank">
+            <h2>Reto 8 - Star Wars Cards</h2>
+          </a>
+
+          <p>
+            <span class="label-dark">2022</span>
+            <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
+          </p>
+          <p class="resume">
+            Este reto fue hecho en front-end mentor usando HTML, CSS y JS
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="background-footer"></section>
+  <footer class="footer">
+
+    <div class="contacto-footer">
+      <div>
+        <h1 class="title">Contact me</h1>
+      </div>
+      <div>
+        <ul class="menu-social">
           <li>
-            <a href="">Works</a>
+            <a class="label-dark" href="https://github.com/KarinaMendietta" target="_blank"> Github</a>
           </li>
+
           <li>
-            <a href="">Blog</a>
-          </li>
-          <li>
-            <a href="">Contact</a>
+            <a class="label-dark" href="https://www.linkedin.com/in/karina-m-96aa8b165" target="_blank"> Linked in</a>
           </li>
         </ul>
-      
-      </nav>
-    </header>
-    <section class="banner">
-      <div>
-        <h1 class="title">Hi, I'm Karina Mendietta,</h1>
-        <h1 class="title">Full Stack Web Developer</h1>
-        <p class="resume">
-          Interested in assuming new technologies challenges
-        </p>
-        <button class="btn-primary">Download Resume</button>
       </div>
       <div>
-        <img class="img-profile" src="./imagenes/fotoperfil.jpeg" alt="" />
+        <span>karinamendiettasoto@gmail.com</span>
       </div>
-    </section>
-    <hr class="style-hr"/>
-    <section >
-      <div class="section-works">
-        <h4 class="text-works">Features works</h4>
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana2/reto_1.html" target="_blank">
-              <img src="./imagenes/index/img1.jpeg" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio"  href="./semana2/reto_1.html" target="_blank">
-              <h2>Reto 1 - NFT Design</h2>
-            </a>
+    </div>
 
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana2/reto2.html" target="_blank">
-              <img src="./imagenes/index/img2.JPG" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio" href="./semana2/reto2.html" target="_blank">
-              <h2>Reto 2 - Build The Cominuty</h2>
-            </a>
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>
-        <hr />
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana2/reto_3.html" target="_blank">
-              <img src="./imagenes/index/img3.jpeg" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio" href="./semana2/reto_3.html" target="_blank">
-              <h2>Reto 3 - Comments</h2>
-            </a>
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>        
-        <hr />
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana3/dia1/reto4.html" target="_blank">
-              <img src="./imagenes/index/reto4-imagen.JPG" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio" href="./semana3/dia1/reto4.html" target="_blank">
-              <h2>Reto 4 - Using Grid </h2>
-            </a>
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>        
-        <hr />
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana3/dia1/reto5.html" target="_blank">
-              <img src="./imagenes/index/reto5-imagen.JPG" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio" href="./semana3/dia1/reto5.html" target="_blank">
-              <h2>Reto 5 - Calculator </h2>
-            </a>
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>        
-        <hr />
-        <div class="card">
-          <div>
-            <a class="link-portafolio" href="./semana3/dia3/reto_6.html" target="_blank">
-              <img src="./imagenes/index/reto6-imagen.JPG" alt="" />
-            </a>
-          </div>
-          <div class="container-detail">
-            <a class="link-portafolio" href="./semana3/dia3/reto_6.html" target="_blank">
-              <h2>Reto 6 - We are creatives</h2>
-            </a>
-            <p>
-              <span class="label-dark">2022</span>
-              <span class="text-light">&nbsp;&nbsp;&nbsp;NFT Design</span>
-            </p>
-            <p class="resume">
-              Este reto fue hecho en front-end mentor usando HTML y CSS
-            </p>
-          </div>
-        </div>        
-        <hr />
-      </div>
-    </section>
-    <section class="background-footer"></section>
-    <footer class="footer"> 
-      
-      <div class="contacto-footer">
-        <div>
-          <h1 class="title">Contact me</h1>
-        </div>
-        <div>
-          <ul class="menu-social">
-            <li>
-              <a class="label-dark" href="https://github.com/KarinaMendietta" target="_blank" > Github</a>
-            </li>
-            
-            <li>
-              <a class="label-dark" href="https://www.linkedin.com/in/karina-m-96aa8b165" target="_blank" > Linked in</a>
-            </li>            
-          </ul>     
-        </div>
-        <div>
-          <span>karinamendiettasoto@gmail.com</span>
-        </div>
-      </div>
-      
-    </footer>
-  </body>
-  </body>
+  </footer>
+</body>
+</body>
+
 </html>

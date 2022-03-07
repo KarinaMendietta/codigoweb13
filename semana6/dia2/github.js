@@ -104,7 +104,7 @@ const formatDate = (fecha) => {
 };
 
 const setDataUser = (data) => {
-  imageProfile.src = data.avatar_url;
+  imageProfile.src = data.avatar_url; 
   githubName.innerHTML = data.name;
   githubBio.innerHTML = data.bio;
   githubUsername.innerHTML = `@${data.login}`;
