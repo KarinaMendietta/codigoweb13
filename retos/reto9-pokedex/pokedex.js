@@ -1,12 +1,4 @@
-/**
- * Logica para el pokedex
- */
-
 const pokemonContainer = document.querySelector("#row-pokemons");
-// html from modal
-const pokemonName = document.querySelector("#pokemon-name");
-
-const pokemonAbilitie = document.querySelector("#pokemon-abilitie");
 
 // vamos a crear una funcion para obtener los datos
 const obtenerPokemones = async () => {
@@ -20,7 +12,7 @@ const obtenerPokemones = async () => {
 // vamos a crear a una funcion la cual se encargue de poder pintar nuestros pokemones
 const setPokemonsInView = (results) => {
   const imgUrl =
-    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
+    "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/";
 
   results.map(async (result, index) => {
     // Por cada iteracion crea la variable html con el contendi de div que ocupa el
@@ -38,9 +30,9 @@ const setPokemonsInView = (results) => {
          <div class='card' style='background-color: ${bgColor};'>
            <img 
              class='card-img-top mt-2'
-             width='100'
-             height='100'
-             src='${imgUrl}${index + 1}.svg'
+             width= auto
+             height= auto
+             src='${imgUrl}${index + 1}.png'
            >
            <div class='card-body text-center'>
              <h6 class='text-title text-white'>N° ${index + 1}</h6>
@@ -50,7 +42,7 @@ const setPokemonsInView = (results) => {
            <button class='btn btn-primary' onclick='obtenerDetallePokemon("${
              result.url
            }")' data-bs-toggle='modal' data-bs-target='#modalPokemon'>ver detalle</button>
-           
+          
          </div>
        </div>
      `;
@@ -59,14 +51,27 @@ const setPokemonsInView = (results) => {
   });
 };
 
+const pokemonModal = document.querySelector("#modalPokemon");
+
+const pokemonName = document.querySelector("#pokemon-name");
+
+const pokemonImage = document.querySelector("#image-modal");
+
+const pokemonAbilitie = document.querySelector("#abilities");
+
+const pokemonType = document.querySelector("#type");
+
 // cuando debe ejecutarse?y
 const obtenerDetallePokemon = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
   console.log("detalle", data);
   pokemonName.innerHTML = data.name;
+  pokemonImage.src = data.sprites.other.home.front_default;
+  pokemonAbilitie.innerHTML = data.abilities[0].ability.name;
+  pokemonType.innerHTML = data.types[0].type.name;
+  console.log(response);
 };
-
 
 // llamamos a la funcion
 obtenerPokemones();
