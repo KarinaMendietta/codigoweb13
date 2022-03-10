@@ -31,7 +31,7 @@ const obtenerPersonajesStarWars = async () => {
   const data = await response.json();
   console.log(data.results);
   setStarWarsInView(data.results);
-};
+}; 
 
 const setStarWarsInView = (results) => {
   results.map((result) => {

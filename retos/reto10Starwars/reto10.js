@@ -16,6 +16,9 @@ const setStarWarsInView = (results) => {
         <div class='card'>
             <div class='card-body text-center'>
             <h4 class='text-title'>${result.name}</h4>
+            
+
+            <img src="https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg" id="image" width="250" alt="">
             </div>
             <button class='btn btn-primary' onclick ='obtenerDetalleStarWars("${result.url}"))'
             data-bs-toggle='modal'
@@ -29,13 +32,15 @@ const setStarWarsInView = (results) => {
 const obtenerDetalleStarWars = async (url) => {
   const response = await fetch(url);
   const data = await response.json();
-  console.log("detalle",data)
-  starWarsName.innerHTML = data.name
+  console.log("detalle", data);
+  starWarsName.innerHTML = data.name;
 };
 
 obtenerDetalleStarWars();
 const getImagen = async (imagen) => {
-  const response = await fetch ("https://akabab.github.io/starwars-api/api/all.json")
-}
+  const response = await fetch(
+    "https://akabab.github.io/starwars-api/api/all.json"
+  );
+};
 
 obtenerPersonajesStarWars();
