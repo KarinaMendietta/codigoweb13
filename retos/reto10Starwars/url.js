@@ -33,43 +33,43 @@ const getImageFromStarWars = async (actors) => {
 const setStarWarsInView = (actor) => {
   actor.map((actor) => {
     const html = `
-    <div class="col-md-3 mt-3">
+    <div class="card-group col-md-3 mt-3">
         <div class='card'>
-            <div class='card-body text-center row'>
-            <h4 class='card-title'>${actor.name}</h4>
+            <div class='card-body text-center row p-1'>
+              <h4 class='card-title'>${actor.name}</h4>
                 
-            <div class='col'>    
+              <div class='col'>    
                 <h6 class='card-text'>Altura</h6>
                 <h6 class='card-text'>Masa</h6>
                 <h6 class='card-text'>Genero</h6>
-            </div>
-            <div class='col'>                   
+              </div>
+              <div class='col'>                   
                 <h6 class='card-text'>${actor.height} </h6>
                 <h6 class='card-text'>${actor.mass}</h6>
                 <h6 class='card-text'>${actor.gender}</h6>
-            </div>
-        
-        
-            <img 
-             class='card-img-top mt-2'
-             width= 20
-             height= auto
-             src='${actor.imageFromAPI}'
-           >
-           
-           
-            <button class='btn btn-success' onclick='obtenerDetallePlaneta("${actor.homeworld}")'
-            data-bs-toggle='modal'
-            data-bs-target='#modalStarWars'>Planeta</button>
+              </div>    
+              <div class="container h-50" >
+                <img 
+                class=" h-60 d-inline-block" style="width: 100px; background-color: rgba(0,0,255,.1)"
+                alt=''             
+                src='${actor.imageFromAPI}'
+              </div>
+                
+            </div>   
+            <div class="my-auto d-grid gap-2 d-md-block mt">                            
+                <button type="button" class='btn btn-success ' onclick='obtenerDetallePlaneta("${actor.homeworld}")'
+                data-bs-toggle='modal'
+                data-bs-target='#modalStarWars'>Planeta</button>
             
-            <button class='btn btn-warning mt-2' onclick='obtenerDetalleVehiculo("${actor.vehicles}")'
-            data-bs-toggle='modal'
-            data-bs-target='#modalStarWars'>Vehiculo</button>
+                <button type="button" class='btn btn-warning ' onclick='obtenerDetalleVehiculo("${actor.vehicles[0]}")'
+                data-bs-toggle='modal'
+                data-bs-target='#modalStarWarsVehiculo'>Vehiculo</button>
 
-            <button class='btn btn-primary mt-2' onclick='obtenerDetalleNave("${actor.starships}")'
-            data-bs-toggle='modal'
-            data-bs-target='#modalStarWars'>Nave</button>
-
+                <button type="button" class='btn btn-primary ' onclick='obtenerDetalleNave("${actor.starships[0]}")'
+                data-bs-toggle='modal'
+                data-bs-target='#modalStarWarsNave'>Nave</button>
+            </div>          
+                   
         </div>
     </div>`;
     starwarContainer.innerHTML += html;
@@ -78,13 +78,10 @@ const setStarWarsInView = (actor) => {
 
 const modalStarWars = document.querySelector("#modalStarWars");
 
-const nameStarWars = document.querySelector("#nameSW");
-
 const planetaStarWars = document.querySelector("#homeworldSW");
-
-const vehiculoStarWars = document.querySelector("#vehiclesSW");
-
-const naveStarWars = document.querySelector("#starshipsSW");
+const climaStarWars = document.querySelector("#climateSW");
+const terrenoStarWars = document.querySelector("#terrainSW");
+const populacionStarWars = document.querySelector("#populationSW");
 
 const obtenerDetallePlaneta = async (homeworld) => {
   const response = await fetch(homeworld);
@@ -92,25 +89,48 @@ const obtenerDetallePlaneta = async (homeworld) => {
   console.log("detalle", data);
 
   planetaStarWars.innerHTML = data.name;
+  climaStarWars.innerHTML = data.climate;
+  terrenoStarWars.innerHTML = data.terrain;
+  populacionStarWars.innerHTML = data.population;
   console.log(response);
 };
+
+const modalStarWarsVehiculo = document.querySelector("#modalStarWarsVehiculo");
+
+const vehiculoStarWars = document.querySelector("#vehiclesSW");
+const modeloStarWars = document.querySelector("#modelSW");
+const manufacturaStarWars = document.querySelector("#manufacturerSW");
+const tripulacionStarWars = document.querySelector("#crewSW");
 
 const obtenerDetalleVehiculo = async (vehicles) => {
   const response = await fetch(vehicles);
   const data = await response.json();
   console.log("detalle", data);
 
-  vehiculoStarWars.innerHTML = data.results[0].name;
+  vehiculoStarWars.innerHTML = data.name;
+  modeloStarWars.innerHTML = data.model;
+  manufacturaStarWars.innerHTML = data.manufacturer;
+  tripulacionStarWars.innerHTML = data.crew;
 
   console.log(response);
 };
 
-const obtenerDetalleNave = async (vehicles) => {
-  const response = await fetch(vehicles);
+const modalStarWarsNave = document.querySelector("#modalStarWarsNave");
+
+const naveStarWars = document.querySelector("#starshipsSW");
+const modeloNaveStarWars = document.querySelector("#modelNaveSW");
+const tripulacionNaveStarWars = document.querySelector("#crewNaveSW");
+const starship_classStarWars = document.querySelector("#starship_classSW");
+
+const obtenerDetalleNave = async (starships) => {
+  const response = await fetch(starships);
   const data = await response.json();
   console.log("detalle", data);
 
-  vehiculoStarWars.innerHTML = data.results[0].name;
+  naveStarWars.innerHTML = data.name;
+  modeloNaveStarWars.innerHTML = data.model;
+  tripulacionNaveStarWars.innerHTML = data.crew;
+  starship_classStarWars.innerHTML = data.starship_class;
 
   console.log(response);
 };

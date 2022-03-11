@@ -1,0 +1,15 @@
+{
+  "name": "dia4",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto con NODE",
+  "main": "prueba.js",
+  "type":"module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Karina Mendietta",
+  "license": "ISC",
+  "dependencies": {
+    "date-format": "^4.0.4"
+  }
+}
