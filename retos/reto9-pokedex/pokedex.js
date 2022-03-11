@@ -77,13 +77,13 @@ const obtenerDetallePokemon = async (url) => {
 obtenerPokemones();
 
 const color = {
-  red: "rgba(255, 48, 50, 0.7)",
-  green: "rgba(83, 180, 50, 0.7)",
-  blue: "rgba(113, 104, 226, 0.7)",
-  brown: "rgba(113, 104, 226, 0.7)",
-  purple: "rgba(113, 104, 226, 0.7)",
-  pink: "rgba(255, 48, 50, 0.7)",
-  yellow: "rgba(229, 216, 0, 0.6)",
+  red: "RGB(251, 109, 108)",
+  green: "RGB(73, 208, 176)",
+  blue: "RGB(88, 170, 246)",
+  brown: "RGB(178, 115, 108)",
+  purple: "#7c538d",
+  pink: "#ffc0cb",
+  yellow: "RGB(255, 207, 74)",
 };
 
 const getColorPokemon = async (id) => {
@@ -103,4 +103,27 @@ const getColorPokemon = async (id) => {
   // como el key es red esto retorna rgba(255, 48, 50, 0.7)
   console.log(data.color.name);
   return color[data.color.name];
-};
+  };
+
+ // const bgColor = await tenerColorPokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`);
+/*
+ pokemonModal();
+  const colorcito = {
+    red: "RGB(251, 109, 108)",
+    green: "RGB(73, 208, 176)",
+    blue: "RGB(88, 170, 246)",
+    brown: "RGB(178, 115, 108)",
+    purple: "#7c538d",
+    pink: "#ffc0cb",
+    yellow: "RGB(255, 207, 74)",
+  };
+  const tenerColorPokemon = async (id) => {
+    const response = await fetch(
+      `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/${id}`
+    );
+  const data = await response.json();
+  console.log(data.colorcito.name);
+    return colorcito[data.colorcito.name];
+  };
+  */
+

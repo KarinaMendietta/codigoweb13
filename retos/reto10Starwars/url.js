@@ -36,8 +36,7 @@ const setStarWarsInView = (actor) => {
     <div class="card-group col-md-3 mt-3">
         <div class='card'>
             <div class='card-body text-center row p-1'>
-              <h4 class='card-title'>${actor.name}</h4>
-                
+              <h4 class='card-title'>${actor.name}</h4>              
               <div class='col'>    
                 <h6 class='card-text'>Altura</h6>
                 <h6 class='card-text'>Masa</h6>
@@ -48,24 +47,24 @@ const setStarWarsInView = (actor) => {
                 <h6 class='card-text'>${actor.mass}</h6>
                 <h6 class='card-text'>${actor.gender}</h6>
               </div>    
-              <div class="container h-50" >
+              <div class="container-fluid-img text-center mh-100%" >
                 <img 
-                class=" h-60 d-inline-block" style="width: 100px; background-color: rgba(0,0,255,.1)"
+                class=" d-inline-block" style="width: 100px; height: 130px ;  background-color: rgba(0,0,255,.1)"
                 alt=''             
                 src='${actor.imageFromAPI}'
               </div>
                 
             </div>   
             <div class="my-auto d-grid gap-2 d-md-block mt">                            
-                <button type="button" class='btn btn-success ' onclick='obtenerDetallePlaneta("${actor.homeworld}")'
+                <button type="button" class='btn btn-success btn-sm ' onclick='obtenerDetallePlaneta("${actor.homeworld}")'
                 data-bs-toggle='modal'
                 data-bs-target='#modalStarWars'>Planeta</button>
             
-                <button type="button" class='btn btn-warning ' onclick='obtenerDetalleVehiculo("${actor.vehicles[0]}")'
+                <button type="button" class='btn btn-warning btn-sm' onclick='obtenerDetalleVehiculo("${actor.vehicles[0]}")'
                 data-bs-toggle='modal'
                 data-bs-target='#modalStarWarsVehiculo'>Vehiculo</button>
 
-                <button type="button" class='btn btn-primary ' onclick='obtenerDetalleNave("${actor.starships[0]}")'
+                <button type="button" class='btn btn-primary btn-sm' onclick='obtenerDetalleNave("${actor.starships[0]}")'
                 data-bs-toggle='modal'
                 data-bs-target='#modalStarWarsNave'>Nave</button>
             </div>          
