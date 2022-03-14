@@ -105,8 +105,8 @@ const getColorPokemon = async (id) => {
   return color[data.color.name];
   };
 
- // const bgColor = await tenerColorPokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`);
-/*
+  /*const bgColor = await tenerColorPokemon(`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/${id}.svg`);
+
  pokemonModal();
   const colorcito = {
     red: "RGB(251, 109, 108)",
@@ -125,5 +125,5 @@ const getColorPokemon = async (id) => {
   console.log(data.colorcito.name);
     return colorcito[data.colorcito.name];
   };
-  */
-
+  
+*/

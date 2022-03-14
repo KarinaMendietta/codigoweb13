@@ -1,10 +1,11 @@
 /**
  * Este archivo se va a ecargar de gestionar mi servios GET POST PUT DELETE
  */
- const URL = "https://622ab11414ccb950d222bba2.mockapi.io/api/v1/movies";
-
+ // const URL = "https://622ab11414ccb950d222bba2.mockapi.io/api/v1/movies";
+ const URL = "http://localhost:3000/movies";
  /**
   * Funcion para listar las peliculas
+  * 
   */
  const getMovies = async () => {
    try {

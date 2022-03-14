@@ -8,21 +8,21 @@ body {
   
 }
 
-.header {
+.navBarFix {
   display: flex;
-  justify-content: flex-end;
   position:fixed;
   z-index: 5;
   width: 100%;
+  background:#7d39ee;
  }
+ 
 
 .background-header {
-  background:linear-gradient(to right,#fc94a3  ,#b474a4,#6c5cac,#0c3497  );
-  height: 8vh;
-  
+  background:#7d39ee;
+  height: 50px; 
 }
 
-.nav ul {
+/*.nav ul {
   display: flex;
   list-style: none;
 }
@@ -36,34 +36,35 @@ body {
   color: white;
   font-weight: 700;
 }
+
 .nav ul > li a:hover {
   color:#fc94a3  ;
   transition: 0.7s;
 }
+*/
 
 .banner {
-  height: 80vh;
-  margin-bottom: 0;
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: url(../imagenes/index/banner-div.jpg);
+  background: url(../imagenes/imagenesIndex/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
 }
-
+/*
 .title {
   font-size: 3em;
   font-weight: 500;
   }
 
+*/
 .resume {
   width: 45%;
   font-weight: 300;
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 
 .btn-primary {
   background-image: linear-gradient(to right,
@@ -100,6 +101,7 @@ body {
   width: 243px;
   height: 243px;
   border-radius: 50%;
+  background-color: RGB(98, 91, 171);
 }
 
 .style-hr{
@@ -176,20 +178,13 @@ hr {
 }
 
 .background-footer {
-  height: 15vh;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  background: url("../imagenes/index/fondo-footer3.jpg");
+  /* background: url("../imagenes/imagenesIndex/banner.png");*/
+  background: #7d39ee;
+  
 }
 
-.footer {
-  height: 30vh;
-  background-color: #544ca4 ;
-  color: white;
- 
-   
-}
 
+ /* 
 .contacto-footer {
   display: flex;
   height: 30vh;
@@ -211,5 +206,13 @@ justify-content: space-evenly;
   list-style: none;
 
 }
+*/
 
+.btn-secondary{
+  background: #fc94a3;
+}
 
+.title2{
+  color: #fc94a3;
+  font-size: 1.5em;
+}
