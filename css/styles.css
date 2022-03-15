@@ -31,7 +31,6 @@ body {
 
 .banner {
   display: flex;
-  align-items: center;
   background: url(../imagenes/imagenesIndex/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
