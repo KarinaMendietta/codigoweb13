@@ -27,53 +27,54 @@
 </head>
 <!-- esta etiqueta nos permite escribir css dentro de un html -->
 
-<body data-mode="light">  
-  <header class="header-container background-header ">
+<body data-mode="light">
+  <header class="header background-header ">
+    <div class="container-justify-content ">
+      <nav class="navbar d-flex navBarFix ">
 
-    <nav class="navbar container-justify-content d-flex navBarFix">
+        <div class="navbar-brand nav  justify-content-start">
+          <span class="text-white"> <i class="fa-solid fa-laptop-code"></i> My Portfolio &nbsp;</span>
+          <select name="select-option-mode" id="option-mode">
+            <option value="light">Light Mode</option>
+            <option value="dark">Dark Mode</option>
+          </select>
+        </div>
 
-      <div class="navbar-brand nav  justify-content-start">
-        <span class="text-white"> <i class="fa-solid fa-laptop-code"></i> My Portfolio &nbsp;</span>
-        <select name="select-option-mode" id="option-mode">
-          <option value="light">Light Mode</option>
-          <option value="dark">Dark Mode</option>
-        </select>
+        <ul class="nav justify-content-end ">
+          <li class="nav-item ">
+            <a class="nav-link disabled text-white" href="">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" href="">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled text-white" href="">Contact</a>
+          </li>
+        </ul>
+
+
+      </nav>
+    </div>
+    <section class="d-flex align-item-center banner">
+      <div class="container mt-5">
+        <div class="row mt-5 " >
+	        <div class="col img text-center"  style="border: 1px solid  black">
+            <img class="img-profile" src="./imagenes/imagenesIndex/kms_sinbg.png" alt="" />
+          </div>
+          <div class="col" style="border: 1px solid  black" >
+            <h1 class="h1">Hi, I'm Karina Mendietta,</h1>
+            <h1 class="h2">Full Stack Web Developer</h1>
+            <p class="lead">
+              Interested in assuming new technologies challenges
+            </p>
+            <button class="btn-primary">Download Resume</button>
+          </div>          
+        </div>
       </div>
-
-      <ul class="nav justify-content-end ">
-        <li class="nav-item ">
-          <a class="nav-link disabled text-white" href="">Works</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-white" href="">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled text-white" href="">Contact</a>
-        </li>
-      </ul>
-
-
-    </nav>
+    </section>
   </header>
-  <section class=" container-fluid banner">
-    
-      <div class="row my-5 mx-5  ">
-        <div class="col">
-          <h1 class="title">Hi, I'm Karina Mendietta,</h1>
-          <h1 class="title">Full Stack Web Developer</h1>
-          <p class=" resume">
-            Interested in assuming new technologies challenges
-          </p>
-          <button class="btn-primary">Download Resume</button>
-        </div>
-        <div class="col img text-end">
-          <img class="img-profile" src="./imagenes/imagenesIndex/kms_sinbg.png" alt="" />
 
-        </div>
-      </div>
-    
-  </section>
-  <hr class="style-hr" />
+
   <section>
     <div class="section-works">
       <h4 class="text-works">Features works</h4>
@@ -320,7 +321,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
-  <script src="./js/index.js"></script>  
+  <script src="./js/index.js"></script>
 
 </body>
 
