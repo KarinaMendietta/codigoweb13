@@ -43,16 +43,17 @@ body {
   height: 100%;
 
 }
-/*
+
 .resume {
   width: 45%;
   font-weight: 300;
   margin-top: 25px;
   margin-bottom: 25px;
+  color: #7d39ee;
 }
-*/
 
-.btn-primary {
+
+.btn-principal {
   background-image: linear-gradient(to right,
     #fc94a3  ,
     #b474a4,
@@ -61,7 +62,7 @@ body {
   );
 }
 
-.btn-primary {
+.btn-principal {
   margin: 10px;
   padding: 15px 45px;
   text-align: center;
@@ -77,7 +78,7 @@ body {
   
 }
 
-.btn-primary:hover {
+.btn-principal:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -102,14 +103,6 @@ body {
   margin: auto;
 }
 
-.card {
-  display: flex;
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 91%, rgba(240,196,199,0.44611347957151615) 100%);
-
-
-}
-
 .card div img {
   width: 246px;
   height: 180px;
@@ -117,11 +110,7 @@ body {
   border-radius: 8px;
 }
 
-.text-works {
-  font-size: 1em;
-  margin-bottom: 30px;
-  font-weight: 300;
-}
+
 
 .container-detail {
   margin-left: 20px;
@@ -152,10 +141,14 @@ hr {
   margin-bottom: 20px;
 }
 
-.link-portafolio {
-  color: #000;
+.card-title {
+  color: rgb(40, 32, 150);
   text-decoration: none;
   transition: 0.3s;
+}
+
+.card-text {
+  color: #7d39ee;
 }
 
 .link-portafolio:hover {
@@ -189,6 +182,7 @@ body[data-mode="light"] {
 
 body[data-mode="dark"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #18191f;
+  background-color: #333a64;
   color: white;
 }
+
