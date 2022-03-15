@@ -22,16 +22,20 @@ body {
 .background-header {
   height: 100%; 
   width:100%;
- 
+  
+}
+.nav-link {
+  color: white;
+}
+
+.hoverRosa:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color:#fc94a3  ;
+  transition: 0.7s;
   
 }
 
-/*
-.nav ul > li a:hover {
-  color:#fc94a3  ;
-  transition: 0.7s;
-}
-*/
 
 .banner {
   display: flex;
@@ -116,10 +120,7 @@ body {
   margin-left: 20px;
 }
 
-.container-detail p {
-  margin-top: 20px;
-  width: 100% !important;
-}
+
 
 .label-dark {
   background-color: #142850;
@@ -129,7 +130,7 @@ body {
   font-weight: bold;
 }
 
-.text-light {
+.h2{
   color: #8695a4;
 }
 
@@ -162,7 +163,9 @@ hr {
 }
 
 .btn-secondary{
-  background: #fc94a3;
+  background:linear-gradient(to right,#fc94a3  ,#d452b4);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: none;
 }
 
 .title2{
@@ -177,12 +180,12 @@ hr {
 body[data-mode="light"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background-color: white;
-  color: black;
+
 }
 
 body[data-mode="dark"] {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #333a64;
-  color: white;
+  background-color: black;
+ 
 }
 
