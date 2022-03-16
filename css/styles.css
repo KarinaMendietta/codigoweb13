@@ -166,6 +166,13 @@ hr {
   background:linear-gradient(to right,#fc94a3  ,#d452b4);
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   border: none;
+  
+}
+
+.btn-icon{
+  background:linear-gradient(to right,#fc94a3  ,#d452b4);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  border: none;
 }
 
 .title2{
